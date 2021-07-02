@@ -1,89 +1,55 @@
-# 05 Third-Party APIs: Work Day Scheduler
+# Work Day Scheduler
 
-## Your Task
+## Introduction 
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+Schedule out your work day during business hours using this app. This application allows a user to look at todays date and time and see what timeblocks are available to schedule. Each timeblock is color coded and will save a users input when typed into.
 
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
+![Deployed application](assets\images\deployedSite.png)
 
-## User Story
+The base structure of the application was formulated within the index.html file. timeblocks were created using the bootstrap table modeling and text areas for the inputs. Each row is evenly split between one another and is interactive with the users input.
 
-```md
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
+![Index.html](assets\images\indexHMLsnap.png)
 
-## Acceptance Criteria
+the functionality of the application comes from the script.js file where global variables are declared to point at id tags within index.html. Also in order for the time color coding and tracking to work, the implementation of moment.js was used to keep the schedule up to date. moment.js documentation and further reading can be found within the references section. 
 
-```md
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
+![script.js](assets\images\scriptJSsnap.png)
 
-The following animation demonstrates the application functionality:
+## Deployed Application 
 
-![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/05-third-party-apis-homework-demo.gif)
+[WorkDay Scheduler](https://pn-barnes.github.io/WorkDay-Scheduler/)
+
+[github Repository](https://github.com/PN-Barnes/WorkDay-Scheduler)
+
+## Installation
 
 
-## Grading Requirements
+[VS Code](https://code.visualstudio.com/)
 
-This homework is graded based on the following criteria: 
+[node.js](https://nodejs.org/en/)
 
-### Technical Acceptance Criteria: 40%
+[jQuery](https://code.jquery.com/)
 
-* Satisfies all of the above acceptance criteria plus the following:
+[jqueryUI](https://jqueryui.com/)
 
-  * Uses a date utility library to work with date and time
+[Bootstrap](https://getbootstrap.com/)
 
-### Deployment: 32%
+## References
 
-* Application deployed at live URL
+[HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 
-* Application loads with no errors
+[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
-* Application GitHub URL submitted
+[Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-* GitHub repo contains application code
+[Moment.js](https://momentjs.com/)
 
-### Application Quality: 15%
+[window.localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
 
-* Application user experience is intuitive and easy to navigate
+[jquery](https://developer.mozilla.org/en-US/docs/Glossary/jQuery)
 
-* Application user interface style is clean and polished
+[bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 
-* Application resembles the mock-up functionality provided in the homework instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
+## Credits
 
 - - -
 © 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
