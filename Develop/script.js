@@ -25,7 +25,7 @@ var fivePMrow = $('#fivePMrow')
 
 var savedNineEvent = localStorage.getItem('eventNineAM')
 var eventNineAM = $( '#9amEvent' )
-eventNineAM = localStorage.getItem('eventNineAM')
+eventNineAM.val(localStorage.getItem('eventNineAM'))
 var buttonNineAM = $( '#buttonNineAM' )
 console.log(eventNineAM)
 
