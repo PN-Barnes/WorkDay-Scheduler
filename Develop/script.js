@@ -25,15 +25,16 @@ var fivePMrow = $('#fivePMrow')
 
 var savedNineEvent = localStorage.getItem('eventNineAM')
 var eventNineAM = $( '#9amEvent' )
+eventNineAM = localStorage.getItem('eventNineAM')
 var buttonNineAM = $( '#buttonNineAM' )
 console.log(eventNineAM)
 
 $( '#buttonNineAM' ).click( function() {
     console.log(localStorage)
-    // var inputValue = eventNine
-    console.log(eventNineAM.val())
-    localStorage.setItem('eventNineAM', eventNineAM.val())
-    eventNineAM = localStorage.getItem('eventNineAM')
+    
+    var inputvalue = eventNineAM.val()
+
+    localStorage.setItem('eventNineAM', inputvalue)
 });
 
 // --------------------------------------------------------------------
