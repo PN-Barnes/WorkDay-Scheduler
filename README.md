@@ -2,6 +2,8 @@
 
 ## Introduction 
 
+![GIF Deployed Site](assets\images\applicationTest.gif)
+
 Schedule out your work day during business hours using this app. This application allows a user to look at todays date and time and see what timeblocks are available to schedule. Each timeblock is color coded and will save a users input when typed into.
 
 ![Deployed application](assets\images\deployedSite.png)
