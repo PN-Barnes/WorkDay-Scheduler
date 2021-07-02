@@ -30,7 +30,7 @@ console.log(eventNineAM)
 
 $( '#buttonNineAM' ).click( function() {
     console.log(localStorage)
-    var inputValue = eventNine
+    // var inputValue = eventNine
     console.log(eventNineAM.val())
     localStorage.setItem('eventNineAM', eventNineAM.val())
     eventNineAM = localStorage.getItem('eventNineAM')
