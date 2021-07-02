@@ -20,11 +20,25 @@ var twoPMrow = $('#twoPMrow')
 var threePMrow = $('#threePMrow')
 var fourPMrow = $('#fourPMrow')
 var fivePMrow = $('#fivePMrow')
-// --------------------------------------------------------------------
+// ------------------------------------------------------------------------------------
 
-
-var savedNineEvent = localStorage.getItem('eventNineAM')
+// ---------------------- Variables for selecting TextBoxes -------------------------------
 var eventNineAM = $( '#9amEvent' )
+var eventTenAM = $( '#10amEvent')
+var eventElevenAM = $( '#11amEvent')
+var eventTwelvePM = $( '#12pmEvent')
+var eventOnePM = $( '#1pmEvent')
+var eventTwoPM = $( '#2pmEvent')
+var eventThreePM = $( '#3pmEvent')
+var eventFourPM = $( '#4pmEvent')
+var eventFivePM = $( '#5pmEvent')
+
+// ----------------------------------------------------------------------------------------
+
+// -------------------------- event listeners for textboxes------------------------------
+
+// 9AM
+var savedNineEvent = localStorage.getItem('eventNineAM')
 eventNineAM.val(localStorage.getItem('eventNineAM'))
 var buttonNineAM = $( '#buttonNineAM' )
 console.log(eventNineAM)
@@ -37,7 +51,119 @@ $( '#buttonNineAM' ).click( function() {
     localStorage.setItem('eventNineAM', inputvalue)
 });
 
-// --------------------------------------------------------------------
+// 10AM
+var savedTenEvent = localStorage.getItem('eventTenAM')
+eventTenAM.val(localStorage.getItem('eventTenAM'))
+var buttonTenAM = $( '#buttonTenAM' )
+console.log(eventTenAM)
+
+$( '#buttonTenAM' ).click( function() {
+    console.log(localStorage)
+    
+    var inputvalueTen = eventTenAM.val()
+
+    localStorage.setItem('eventTenAM', inputvalueTen)
+});
+
+// 11AM
+var savedElevenEvent = localStorage.getItem('eventElevenAM')
+eventElevenAM.val(localStorage.getItem('eventElevenAM'))
+var buttonElevenAM = $( '#buttonElevenAM' )
+console.log(eventElevenAM)
+
+$( '#buttonElevenAM' ).click( function() {
+    console.log(localStorage)
+    
+    var inputvalueEleven = eventElevenAM.val()
+
+    localStorage.setItem('eventElevenAM', inputvalueEleven)
+});
+
+// 12PM 
+var savedTwelveEvent = localStorage.getItem('eventTwelvePM')
+eventTwelvePM.val(localStorage.getItem('eventTwelvePM'))
+var buttonTwelvePM = $( '#buttonTwelvePM' )
+console.log(eventTwelvePM)
+
+$( '#buttonTwelvePM' ).click( function() {
+    console.log(localStorage)
+    
+    var inputvalueTwelve = eventTwelvePM.val()
+
+    localStorage.setItem('eventTwelvePM', inputvalueTwelve)
+});
+
+// 1PM
+var savedOneEvent = localStorage.getItem('eventOnePM')
+eventOnePM.val(localStorage.getItem('eventOnePM'))
+var buttonOnePM = $( '#buttonOnePM' )
+console.log(eventOnePM)
+
+$( '#buttonOnePM' ).click( function() {
+    console.log(localStorage)
+    
+    var inputvalueOne = eventOnePM.val()
+
+    localStorage.setItem('eventOnePM', inputvalueOne)
+});
+
+// 2PM
+var savedTwoEvent = localStorage.getItem('eventTwoPM')
+eventTwoPM.val(localStorage.getItem('eventTwoPM'))
+var buttonTwoPM = $( '#buttonTwoPM' )
+console.log(eventTwoPM)
+
+$( '#buttonTwoPM' ).click( function() {
+    console.log(localStorage)
+    
+    var inputvalueTwo = eventTwoPM.val()
+
+    localStorage.setItem('eventTwoPM', inputvalueTwo)
+});
+
+// 3PM
+var savedThreeEvent = localStorage.getItem('eventThreePM')
+eventThreePM.val(localStorage.getItem('eventThreePM'))
+var buttonThreePM = $( '#buttonThreePM' )
+console.log(eventThreePM)
+
+$( '#buttonThreePM' ).click( function() {
+    console.log(localStorage)
+    
+    var inputvalueThree = eventThreePM.val()
+
+    localStorage.setItem('eventThreePM', inputvalueThree)
+});
+
+// 4PM
+var savedFourEvent = localStorage.getItem('eventFourPM')
+eventFourPM.val(localStorage.getItem('eventFourPM'))
+var buttonFourPM = $( '#buttonFourPM' )
+console.log(eventFourPM)
+
+$( '#buttonFourPM' ).click( function() {
+    console.log(localStorage)
+    
+    var inputvalueFour = eventFourPM.val()
+
+    localStorage.setItem('eventFourPM', inputvalueFour)
+});
+
+// 5PM
+var savedFiveEvent = localStorage.getItem('eventFivePM')
+eventFivePM.val(localStorage.getItem('eventFivePM'))
+var buttonFivePM = $( '#buttonFivePM' )
+console.log(eventFivePM)
+
+$( '#buttonFivePM' ).click( function() {
+    console.log(localStorage)
+    
+    var inputvalueFive = eventFivePM.val()
+
+    localStorage.setItem('eventFivePM', inputvalueFive)
+});
+
+// ----------------------------- END OF EVENT LISTENERS ---------------------------------------
 
 // ------------------- created if else conditionals in order to change blocks to match current time event. --------------------------------//
 
